@@ -1,3 +1,5 @@
 .idea
 java_programs.iml
 out
+*.class
+.DS_store
