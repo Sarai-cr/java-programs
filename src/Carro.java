@@ -26,6 +26,7 @@ public class Carro {
     carroPapa.arrancar();
     miCarro.arrancar();
     carroPapa.arrancar();
+    int[] arregloDeEnteros = {1,2,3,4};
   }
 
   public void arrancar() {
