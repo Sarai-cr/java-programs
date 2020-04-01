@@ -43,9 +43,17 @@ public class OrdenadorDeNumeros {
   }
 
   public static void imprimeArreglo(int[] arreglo) {
-    System.out.println(arreglo[0]);
-    System.out.println(arreglo[1]);
-    System.out.println(arreglo[2]);
+    System.out.print(arreglo[0] + " ");
+    imprimeSiIguales(arreglo[0],arreglo[1]);
+    imprimeSiIguales(arreglo[1],arreglo[2]);
+    System.out.println();
+  }
+
+  public static void imprimeSiIguales(int n1, int n2) {
+    if (n1 == n2)
+      System.out.print(n2 + " ");
+    else
+      System.out.print("\n" + n2 + " ");
   }
 }
 
