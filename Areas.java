@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
-public class Areas {
-    private static int No;
+public class Areas<seguir> {
 
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
+        boolean seguir = true;
+        String seleccion;
 
-        System.out.println("Seleccione opción:");
-        System.out.println("1 – Área del círculo");
-        System.out.println("2 – Área del cuadrado");
-        System.out.println("3 – Área de un triángulo");
-        System.out.println("4 – Salir");
-        int opcion = leer.nextInt();
-
-        //do {
+        do {
+            System.out.println("Seleccione opción:");
+            System.out.println("1 – Área del círculo");
+            System.out.println("2 – Área del cuadrado");
+            System.out.println("3 – Área de un triángulo");
+            System.out.println("4 – Salir");
+            int opcion = leer.nextInt();
             if (opcion == 1) {
                 System.out.println("Ingresa el radio del círculo");
                 double r = leer.nextDouble();
@@ -33,9 +33,18 @@ public class Areas {
             }else if (opcion==4){
                 System.out.println("bais");
             }
-        //}
 
-        //while (opcion!=No);
+            System.out.print("¿Desea continuar?");
+            System.out.println("Si , No ");
+            seleccion = leer.next();
+            if (seleccion.equals("No")){
+                System.out.println("bais");
+                seguir=false;
+
+            }
+        } while (seguir);
+
+
         
     }
 }
