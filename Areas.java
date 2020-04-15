@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Areas {
+    private static int No;
+
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
 
@@ -11,7 +13,7 @@ public class Areas {
         System.out.println("4 – Salir");
         int opcion = leer.nextInt();
 
-        do {
+        //do {
             if (opcion == 1) {
                 System.out.println("Ingresa el radio del círculo");
                 double r = leer.nextDouble();
@@ -31,9 +33,9 @@ public class Areas {
             }else if (opcion==4){
                 System.out.println("bais");
             }
-        }
+        //}
 
-        while (opcion!=0);
+        //while (opcion!=No);
         
     }
 }
