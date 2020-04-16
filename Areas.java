@@ -1,12 +1,9 @@
 import java.util.Scanner;
-
-public class Areas<seguir> {
-
+public class Areas {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         boolean seguir = true;
         String seleccion;
-
         do {
             System.out.println("Seleccione opción:");
             System.out.println("1 – Área del círculo");
@@ -33,14 +30,12 @@ public class Areas<seguir> {
             }else if (opcion==4){
                 System.out.println("bais");
             }
-
             System.out.print("¿Desea continuar?");
             System.out.println("Si , No ");
             seleccion = leer.next();
             if (seleccion.equals("No")){
-                System.out.println("bais");
                 seguir=false;
-
+                System.out.println("bais");
             }
         } while (seguir);
 
