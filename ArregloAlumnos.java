@@ -30,13 +30,11 @@ public class ArregloAlumnos {
         System.out.println(" Los nombres y notas de los alumnos son las siguientes: ");
         for (int i = 0; i < 2; i++) {
             System.out.println("\n" + nombres[i] + ": \t");
-            for (int p = 0; p < 2; p++) {
-                System.out.println(promedios[p] + "\t");
-
+                System.out.println(promedios[i] + "\t");
+                System.out.println(notasEnTexto[i]);
 
             }
 
         }
 
     }
-}
