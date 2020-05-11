@@ -98,10 +98,10 @@ public class Main {
         out.println("4 - Crear Motocicleta");
         out.println("5 - Crear Coso acuático");
         out.println("6 - Imprime inventario de sedanes");
-        out.println("6 - Imprime inventario de camionetas");
-        out.println("6 - Imprime inventario de deportivos");
-        out.println("6 - Imprime inventario de motocicletas");
-        out.println("6 - Imprime inventario de acuáticos");
+        out.println("7 - Imprime inventario de camionetas");
+        out.println("8 - Imprime inventario de deportivos");
+        out.println("8 - Imprime inventario de motocicletas");
+        out.println("9 - Imprime inventario de acuáticos");
         out.println("0 - Salir");
         out.println();
         return leer.nextInt();
